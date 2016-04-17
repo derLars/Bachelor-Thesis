@@ -1,0 +1,22 @@
+\newcommand*{\Clonclusion}{\begingroup
+
+%----------------------------------------------------------------------------------------
+%	Conclusion
+%----------------------------------------------------------------------------------------
+\chapter{Conclusion}\label{ch:conclusion}
+\noindent Within the scope of this bachelor thesis it was the task to analyse the impact of the new C++ facilities, introduced since C++11, on a selection of design patterns which are commonly used within embedded software development. 
+
+\noindent With three differend versions of implementation for the factory method pattern as one of the two analysed design patterns, the profiling output has shown that using C++11 facilities mainly causes an overhead of execution time and memory consumption. As advantage the analyse has shown that C++11 provides simple ways of implementation with constant seek complexity independent of the number of managed classes and a memory consumption independent of the size of the managed classes. 
+
+\noindent The profiling output of two versions of implementation for the state pattern as the second analysed design pattern, confirms the overhead in execution time and memory consumption of the C++11 facilities. In addition to this, the analyse has shown how the wrong use of smart pointers causes memory leaks and how to combine the use of smart pointers with an own memory management. 
+
+\noindent An analysis of just two design patterns can only provide idea of how C++11 does impact design patterns. In general it has shown that C++11 does not increase the performance but it increases the quality of the sourcecode. This includes reusability as well as maintainability. Nevertheless C++03 does still have a right to live. After all, my opinion is to keep C++03 and especially raw pointers as possible option for projects with a limited amount of resources. But for most of the modern embedded systems with an adequate amount of resources, I think the cost effectivness of the use of C++11 facilities is appropriate and will benefit the project. 
+
+
+%\noindent C++11 does not increase the performance but it increases the quality of the source code in many ways. Automatic type deduction and variadic templates allow to implement design patterns more generic what increases the reusability and the maintainability. Smart pointers, as replacement for war pointers, provide a way for managing memberships of objects and avoiding memory leaks. Also the consumption of memory and the execution time becomes constant with facilities like lambda expressions and unordered maps.
+
+%\noindent The price for these advantages mainly has to be payed with execution time and memory consumption. Especially the use of smart pointers brings a significant overhead of execution time, but also the memory consumption increases. But not only the smart pointers cause this overhead. Almosed every C++11 facility which was analyzed within this project shows an overhead in either execution time, memory consumption or both, compared with the C++03 alternative. These disadvantages gives the C++03 standard still the right to live.
+
+%\noindent with the analyzis of only two design patterns and just a subset of C++11 facilities, these results can't give a general evaluation of C++11. I think it is not a good idea to avoid established facilities like raw pointers in case. It is the job of the software designer to consider the advantages and disadvantages and make a decision for the whole project. But I also think because of the adequate amount of resources of modern embedded systems, the cost effectivness of the use of C++11 facilities is appropriate in many cases. 
+
+\endgroup}
